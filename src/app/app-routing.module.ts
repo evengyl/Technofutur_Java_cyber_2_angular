@@ -15,6 +15,7 @@ import { SubCompoRoutageComponent } from './demo/advance-routage/sub-compo-routa
 import { GuardsComponent } from './demo/guards/guards.component';
 import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
 import { secuAccessGuard } from './demo/guards/secu-access.guard';
+import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
     { path : ":idProduct", component : SubCompoRoutageComponent}
   ]},
   {path : "guard", component : GuardsComponent},
-  {path : "guarded", canActivate: [secuAccessGuard], component: GuardedCompoComponent}
+  {path : "guarded", canActivate: [secuAccessGuard], component: GuardedCompoComponent},
+  {path : "refreshPromise", component : RefreshPromiseComponent}
 ];
 
 @NgModule({

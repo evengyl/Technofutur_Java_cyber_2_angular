@@ -24,6 +24,7 @@ import { AdvanceRoutageComponent } from './demo/advance-routage/advance-routage.
 import { SubCompoRoutageComponent } from './demo/advance-routage/sub-compo-routage/sub-compo-routage.component';
 import { GuardsComponent } from './demo/guards/guards.component';
 import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
+import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo
     SubCompoRoutageComponent,
     GuardsComponent,
     GuardedCompoComponent,
+    RefreshPromiseComponent,
   ],
   imports: [
     BrowserModule,
