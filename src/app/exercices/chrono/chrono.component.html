@@ -1,0 +1,9 @@
+
+<section class="chrono__container">
+    <h2>{{ minutes < 10 ? zero + minutes : minutes }} : {{ secondes < 10 ? zero + secondes : secondes }}</h2>
+    <div>
+        <p-button (click)="start()">Start</p-button>
+        <p-button (click)="pause()">Pause</p-button>
+        <p-button (click)="stop()">Stop</p-button>
+    </div>
+</section>

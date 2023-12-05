@@ -1,0 +1,21 @@
+<div class="card blue-grey darken-2">
+    <div class="card-image">
+        <img src="https://getstream.io/blog/static/7060c303699f6248e222119a37c803a0/ca004/Angular.png">
+    </div>
+    <div class="card-content white-text">
+        <span class="card-title">
+            N° {{ranked}} - Nom : {{name}} 
+        </span>
+        <p>
+            Nombre de victoire : {{win}}
+        </p>
+        <p>
+            Nombre de défaite : {{defeat}}
+        </p>
+    </div>
+    <div class="card-action">
+        <button class="btn btn-small" (click)="ban(id)">
+            Supprimer ce personnage
+        </button>
+    </div>
+</div>
