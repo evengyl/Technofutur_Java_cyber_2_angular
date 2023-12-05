@@ -10,6 +10,11 @@ import { ChronoComponent } from './exercices/chrono/chrono.component';
 import { ArticleComponent } from './exercices/shopping-cart-2/article/article.component';
 import { Article2Component } from './exercices/shopping-cart-3/article/article2.component';
 import { ShoppingCartComponent } from './exercices/shopping-cart/shopping-cart.component';
+import { AdvanceRoutageComponent } from './demo/advance-routage/advance-routage.component';
+import { SubCompoRoutageComponent } from './demo/advance-routage/sub-compo-routage/sub-compo-routage.component';
+import { GuardsComponent } from './demo/guards/guards.component';
+import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
+import { secuAccessGuard } from './demo/guards/secu-access.guard';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -21,7 +26,14 @@ const routes: Routes = [
   {path: 'chrono', component: ChronoComponent},
   {path: 'shoppingCart', component: ShoppingCartComponent},
   {path: 'shoppingCartV2', component: ArticleComponent},
-  {path: 'shoppingCartV3', component: Article2Component}
+  {path: 'shoppingCartV3', component: Article2Component},
+  {path: 'advanceRouting', component: AdvanceRoutageComponent},
+  {path: 'subroutage', children : [
+    { path : "", component : SubCompoRoutageComponent},
+    { path : ":idProduct", component : SubCompoRoutageComponent}
+  ]},
+  {path : "guard", component : GuardsComponent},
+  {path : "guarded", canActivate: [secuAccessGuard], component: GuardedCompoComponent}
 ];
 
 @NgModule({

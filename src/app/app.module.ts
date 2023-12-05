@@ -20,6 +20,10 @@ import { ShoppingCartComponent } from './exercices/shopping-cart/shopping-cart.c
 import { ArticleComponent } from './exercices/shopping-cart-2/article/article.component';
 import { CartComponent } from './exercices/shopping-cart-2/cart/cart.component';
 import { Article2Component } from './exercices/shopping-cart-3/article/article2.component';
+import { AdvanceRoutageComponent } from './demo/advance-routage/advance-routage.component';
+import { SubCompoRoutageComponent } from './demo/advance-routage/sub-compo-routage/sub-compo-routage.component';
+import { GuardsComponent } from './demo/guards/guards.component';
+import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { Article2Component } from './exercices/shopping-cart-3/article/article2.
     ShoppingCartComponent,
     ArticleComponent,
     CartComponent,
-    Article2Component
+    Article2Component,
+    AdvanceRoutageComponent,
+    SubCompoRoutageComponent,
+    GuardsComponent,
+    GuardedCompoComponent,
   ],
   imports: [
     BrowserModule,
