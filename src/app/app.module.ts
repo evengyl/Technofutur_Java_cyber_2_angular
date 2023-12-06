@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './shared/compos/nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { BindingsComponent } from './demo/bindings/bindings.component';
 import { DirectivesComponent } from './demo/directives/directives.component';
@@ -25,6 +25,7 @@ import { SubCompoRoutageComponent } from './demo/advance-routage/sub-compo-routa
 import { GuardsComponent } from './demo/guards/guards.component';
 import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
 import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.component';
+import { ReactiveFormsComponent } from './demo/reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +50,14 @@ import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.
     GuardsComponent,
     GuardedCompoComponent,
     RefreshPromiseComponent,
+    ReactiveFormsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
