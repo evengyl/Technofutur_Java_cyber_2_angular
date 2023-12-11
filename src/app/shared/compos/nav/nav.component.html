@@ -8,6 +8,8 @@
     <li><a routerLink="guard">Les Gardiens de page</a></li>
     <li><a routerLink="refreshPromise">Refresh sur les Promises</a></li>
     <li><a routerLink="reactiveForms">Les reactives Forms</a></li>
+    <li><a routerLink="httpc">Le Http Client</a></li>
+    <li><a routerLink="obs">Les Observables</a></li>
     
     
 </ul>
@@ -23,6 +25,9 @@
     <div class="nav-wrapper">
         <ul class="right hide-on-med-and-down">
             <li><a routerLink="home">Home</a></li>
+            <li><a *ngIf="!statusAuth" routerLink="obs">Login</a></li>
+            <li><a *ngIf="statusAuth" routerLink="obs">Logout</a></li>
+            <li><a *ngIf="statusAuth" routerLink="obs">My Profil</a></li>
             <li>
                 <a class="dropdown-trigger" data-target="demos">
                     Demos angular v16

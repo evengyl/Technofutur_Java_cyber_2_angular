@@ -17,6 +17,8 @@ import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo
 import { secuAccessGuard } from './demo/guards/secu-access.guard';
 import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.component';
 import { ReactiveFormsComponent } from './demo/reactive-forms/reactive-forms.component';
+import { HttpClientComponent } from './demo/http-client/http-client.component';
+import { ObsComponent } from './demo/obs/obs.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -38,6 +40,8 @@ const routes: Routes = [
   {path : "guarded", canActivate: [secuAccessGuard], component: GuardedCompoComponent},
   {path : "refreshPromise", component : RefreshPromiseComponent},
   {path : "reactiveForms", component : ReactiveFormsComponent},
+  {path : "httpc", component : HttpClientComponent},
+  {path : "obs", component : ObsComponent},
 ];
 
 @NgModule({

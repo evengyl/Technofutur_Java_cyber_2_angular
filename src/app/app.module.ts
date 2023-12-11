@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from "@angular/common/http"
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -26,6 +28,8 @@ import { GuardsComponent } from './demo/guards/guards.component';
 import { GuardedCompoComponent } from './demo/guards/guarded-compo/guarded-compo.component';
 import { RefreshPromiseComponent } from './demo/refresh-promise/refresh-promise.component';
 import { ReactiveFormsComponent } from './demo/reactive-forms/reactive-forms.component';
+import { HttpClientComponent } from './demo/http-client/http-client.component';
+import { ObsComponent } from './demo/obs/obs.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +55,16 @@ import { ReactiveFormsComponent } from './demo/reactive-forms/reactive-forms.com
     GuardedCompoComponent,
     RefreshPromiseComponent,
     ReactiveFormsComponent,
+    HttpClientComponent,
+    ObsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
